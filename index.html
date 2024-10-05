@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,13 +17,15 @@
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
 <title>SofTI</title>
 </head>
 <body>
-    <header id="information" class="">
-        <H1>SofTI</H1>
-        <article>
-            <nav>
+    <header id="information" class="fixed flex flex-wrap justify-between items-center px-5 py-0 gap-x-2 z-10">
+        <!-- <H1 class="text-4xl font-bold">Sof-TI</H1> -->
+        <img src="./assets/imgs/logo.png" class="w-40 h-30">
+        <article class="mr-5">
+            <nav class="flex justify-center items-center gap-x-2">
                 <a href="#information">Informacion</a>
                 <a href="#services">Servicios</a>
                 <a href="#experience">Experiencia</a>
@@ -33,15 +34,20 @@
         </article>
     </header>
     <main>
-        <section class="carrousel">
-            <div class="card">
-                <p>softi es una empresa dedicada a proveer consultoria en TI</p>
+        <section class="carrousel relative text-3xl" id="carousel">
+            <div class="card absolute top-[50%] right-0 mr-5 max-w-[400px] text-end" id="card1">
+                <p>Sof-TI es una empresa dedicada a proveer consultoria en TI</p>
             </div>
-            <div class="card">
-                <p>softi es una empresa dedicada a proveer consultoria en TI</p>
+            <div class="card absolute top-[50%] right-0 mr-5 max-w-[400px] text-end" id="card2">
+                <p>Sof-TI es una empresa dedicada a proveer consultoria en TI</p>
             </div>
-            <div class="card">
-                <p>softi es una empresa dedicada a proveer consultoria en TI</p>
+            <div class="card absolute top-[50%] right-0 mr-5 max-w-[400px] text-end" id="card3">
+                <p>Sof-TI es una empresa dedicada a proveer consultoria en TI</p>
+            </div>
+            <div class="absolute top-[85%] left-[45%] flex gap-x-2">
+                <div class="h-10 w-10 bg-white rounded-full cursor-pointer"></div>
+                <div class="h-10 w-10 bg-white rounded-full cursor-pointer"></div>
+                <div class="h-10 w-10 bg-white rounded-full cursor-pointer"></div>
             </div>
         </section >
         <section id="mision" class="mision">

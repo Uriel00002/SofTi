@@ -25,14 +25,23 @@ header{
     width: 100%;
 }
 
-
-
 main .carrousel{
     background-color: rebeccapurple;
     height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
+.card {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
 
+.active {
+    opacity: 1;
+}
 
 
 header a{

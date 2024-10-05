@@ -1,0 +1,49 @@
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --dark-gray:rgb(29, 29, 29);
+    --transparent:#0000009c;
+}
+
+  *{
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  a{
+    color: #000;
+}
+header{
+    background-color: var(--transparent); 
+    color: white;  
+    position: absolute;
+    width: 100%;
+}
+
+
+
+main .carrousel{
+    background-color: rebeccapurple;
+    height: 400px;
+}
+
+
+
+
+header a{
+    color: white;
+}
+
+footer{
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+footer a{
+    color: white;
+}

@@ -31,6 +31,7 @@ main .carrousel{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-size: 100% 100%;
     transition: background-image 1s ease-in-out;
 }
 
@@ -41,6 +42,11 @@ main .carrousel{
 
 .active {
     opacity: 1;
+}
+
+.text-card {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 

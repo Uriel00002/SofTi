@@ -29,7 +29,7 @@ buttons.forEach(button => {
 });
 
 function startCarousel() {
-    interval = setInterval(nextCard, 3000);
+    interval = setInterval(nextCard, 4000);
 }
 
 // Initialize

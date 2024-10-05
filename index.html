@@ -24,7 +24,7 @@
     <header id="information" class="fixed flex flex-wrap justify-between items-center px-5 py-4 gap-x-2 z-10">
         <a href="#" class="text-4xl font-bold">Sof-TI</a>
         <!-- <img src="./assets/imgs/logo.png" class="w-40 h-30"> -->
-        <article class="mr-5">
+        <article class="mr-5" id="navigation">
             <nav class="flex sm:flex-row flex-col justify-center items-center gap-x-8 sm:gap-y-0 gap-y-2">
                 <a href="#information" class="hover:underline">Informacion</a>
                 <a href="#services" class="hover:underline">Servicios</a>
@@ -32,6 +32,16 @@
                 <a href="#contact" class="hover:underline">Contacto</a>
             </nav>
         </article>
+        <div class="flex flex-col gap-y-2 justify-end items-end" id="menu">
+            <i class="fas fa-bars cursor-pointer"></i>
+            <div class="flex flex-col gap-5 -mr-32 hidden transition-all duration-500 " id="menu-items">
+                <tr>
+                <a href="#information" class="hover:underline">Informacion</a>
+                <a href="#services" class="hover:underline">Servicios</a>
+                <a href="#experience" class="hover:underline">Experiencia</a>
+                <a href="#contact" class="hover:underline">Contacto</a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="carrousel relative text-3xl text-white" id="carousel">
@@ -44,10 +54,10 @@
             <div class="card absolute top-[40%] right-0 mr-5 max-w-[400px] text-end" id="card3">
                 <p class="text-card">Desarrollo web, aplicaciones moviles, analisis de negocios</p>
             </div>
-            <div class="absolute top-[85%] sm:left-[70%] left-[50%] flex gap-x-2" id="carousel-buttons">
-                <div class="h-10 w-10 bg-white rounded-full cursor-pointer" data-index="0"></div>
-                <div class="h-10 w-10 bg-white rounded-full cursor-pointer" data-index="1"></div>
-                <div class="h-10 w-10 bg-white rounded-full cursor-pointer" data-index="2"></div>
+            <div class="absolute flex  top-[85%] sm:left-[70%] left-[50%] gap-x-2" id="carousel-buttons">
+                <div class="sm:h-10 sm:w-10 h-4 w-3 bg-white rounded-full cursor-pointer" data-index="0"></div>
+                <div class="sm:h-10 sm:w-10 h-4 w-3 bg-white rounded-full cursor-pointer" data-index="1"></div>
+                <div class="sm:h-10 sm:w-10 h-4 w-3 bg-white rounded-full cursor-pointer" data-index="2"></div>
             </div>
         </section >
         <section id="mision" class="mision">

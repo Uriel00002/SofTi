@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
     </script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
     <link rel="stylesheet" href="styles.css">
-<title>SofTI</title>
+    <title>SofTI</title>
 </head>
+
 <body>
     <header id="information" class="fixed flex flex-wrap justify-between items-center px-5 py-4 gap-x-2 z-10">
         <a href="#" class="text-4xl font-bold">Sof-TI</a>
@@ -36,10 +39,10 @@
             <i class="fas fa-bars cursor-pointer"></i>
             <div class="flex flex-col gap-5 -mr-32 hidden transition-all duration-500 " id="menu-items">
                 <tr>
-                <a href="#information" class="hover:underline">Informacion</a>
-                <a href="#services" class="hover:underline">Servicios</a>
-                <a href="#experience" class="hover:underline">Experiencia</a>
-                <a href="#contact" class="hover:underline">Contacto</a>
+                    <a href="#information" class="hover:underline">Informacion</a>
+                    <a href="#services" class="hover:underline">Servicios</a>
+                    <a href="#experience" class="hover:underline">Experiencia</a>
+                    <a href="#contact" class="hover:underline">Contacto</a>
             </div>
         </div>
     </header>
@@ -59,29 +62,49 @@
                 <div class="sm:h-10 sm:w-10 h-4 w-3 bg-white rounded-full cursor-pointer" data-index="1"></div>
                 <div class="sm:h-10 sm:w-10 h-4 w-3 bg-white rounded-full cursor-pointer" data-index="2"></div>
             </div>
-        </section >
-        <section id="mision" class="mision">
-            <h2>Nuestra mision</h2>
-            <p> Fortalecer y empoderar a la empresa a través del uso adecuado de las tecnologías de 
-                la información. Para ser la empresa líder en transformación digital e innovación, 
-                dedicada a fortalecer las estrategias tecnológicas de las empresas. </p>
         </section>
-        <hr>
-        <section id="services" class="services">
-            <h2>Nuestros servicios</h2>
-            <article>
-                <h3> Desarrollo de soluciones tecnológicas </h3>
+        <section class="content">
+            <article id="mision" class="mision">
+                <h2>Nuestra mision</h2>
+                <p> Fortalecer y empoderar a la empresa a través del uso adecuado de las tecnologías de
+                    la información. Para ser la empresa líder en transformación digital e innovación,
+                    dedicada a fortalecer las estrategias tecnológicas de las empresas. </p>
             </article>
-            <article>
-                <h3> Consultoría especializada </h3>
+            <hr>
+            <article id="services" class="services">
+                <h2>Nuestros servicios</h2>
+                <div>
+                    <h3> Desarrollo de soluciones tecnológicas </h3>
+                    <div class="dst-list">
+                        <aside>
+                            <p>End To End</p>
+                        </aside>
+                        <aside>
+                            <p>WEB</p>
+                        </aside>
+                        <aside>
+                            <p>Moviles</p>
+                        </aside>
+                    </div>
+                </div>
+                <div>
+                    <h3> Consultoría especializada </h3>
+                </div>
+                <div class="imp-list">
+                    <h3> Implementación y automatización de procesos </h3>
+                    <ul>
+                        <li>Aumento de eficiencia</li>
+                        <li>Mayor presicion</li>
+                        <li>Reduccion de costos</li>
+                        <li>Escalabilidad</li>
+                        <li>Liberacion de recursos humanos</li>
+                    </ul>
+                </div>
             </article>
-            <article>
-                <h3> Implementación y automatización de procesos </h3>
+            <hr>
+            <article id="experience" class="experience">
+                <h2>Nuestra experiencia</h2>
             </article>
-        </section>
-        <hr>
-        <section id="experience" class="experience">
-            <h2>Nuestra experiencia</h2>
         </section>
     </main>
     <footer id="contact">
@@ -101,6 +124,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 <script src="script.js"></script>

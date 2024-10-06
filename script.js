@@ -2,6 +2,7 @@
 const navigation = document.getElementById('navigation');
 const menu = document.getElementById('menu');
 const menu_items = document.getElementById('menu-items');
+const menu_btn = document.getElementById('menu-btn');
 
 function slide() {
     const width = window.innerWidth;
@@ -13,12 +14,30 @@ function slide() {
         menu.style.display = 'none';
         menu_items.classList.add('hidden');
     }
-    menu.addEventListener('click', () => {
-        menu_items.classList.toggle('hidden');
-        setTimeout(() => {
-            menu_items.classList.toggle('-mr-32');
-        }, 300);
+    let active = false;
+    menu_btn.addEventListener('click', () => {
+        if (active) {
+            menu_items.classList.add('-mr-32');
+            setTimeout(() => {
+                menu_items.classList.add('hidden');
+            }, 300);
+        } else {
+            menu_items.classList.remove('hidden');
+            setTimeout(() => {
+                menu_items.classList.remove('-mr-32');
+            }, 300);
+        }
+        active = !active;
     });
+    menu_items.childNodes.forEach((child) => {
+        child.addEventListener('click', () => {
+            menu_items.classList.add('-mr-32');
+            setTimeout(() => {
+                menu_items.classList.add('hidden');
+            }, 300);
+            active = false;
+        });
+    })
 }
 
 document.addEventListener('DOMContentLoaded', slide);

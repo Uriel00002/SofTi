@@ -10,11 +10,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -68,8 +69,7 @@ main .carrousel {
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-size: 100% 100%;
+    background-position: center center;
     transition: background-image 1s ease-in-out;
 }
 
@@ -116,6 +116,7 @@ main .content .services div {
 main .content .services .dst-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 main .content .services .dst-list aside {
@@ -125,16 +126,16 @@ main .content .services .dst-list aside {
     padding: 10px;
     margin: 5px;
     border: 1px solid #d6d6d6;
-    box-sizing: border-box;
     border-radius: 5px;
 }
 
 main .content .services .ce .ce-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-main .content .services .ce .ce-list h1{
+main .content .services .ce .ce-list h1 {
     color: white;
     font-weight: 800;
     font-size: xx-large;
@@ -144,21 +145,19 @@ main .content .services .ce .ce-list h1{
 main .content .services .ce .ce-list .ce-element {
     align-content: center;
     background-color: var(--dark-gray);
-    box-sizing: border-box;
     min-width: 48%;
     height: 150px;
-    margin: 1px;    
+    margin: 1px;
     flex: 1;
     padding: 10px;
     border: 1px solid #d6d6d6;
-    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out;
 }
 
-main .content .services .ce .ce-list .ce-element:hover{
+main .content .services .ce .ce-list .ce-element:hover {
     cursor: pointer;
     background-color: #000;
 }
-
 
 footer {
     background-color: var(--dark-gray);
@@ -169,25 +168,12 @@ footer a {
     color: white;
 }
 
-footer .end{
+footer .end {
     text-align: center;
     background-color: #000;
 }
 
-
-@media (max-width: 768px) {
-    main .content .services .ce .ce-list h1{
-        color: white;
-        font-weight: 600;
-        font-size: x-large;
-        text-shadow: #000;
-    }
-    main .content .services .ce .ce-list .ce-element  {
-        height: 100px;
-        min-width: 100%;
-    }
-  }
-  .wrapper .button {
+.wrapper .button {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -200,11 +186,13 @@ footer .end{
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
-  }
-  .wrapper .button:hover {
+}
+
+.wrapper .button:hover {
     width: 200px;
-  }
-  .wrapper .button .icon {
+}
+
+.wrapper .button .icon {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -214,51 +202,101 @@ footer .end{
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
-  .wrapper .button:nth-child(1):hover .icon {
+}
+
+.wrapper .button:nth-child(1):hover .icon {
     background: #4267B2;
-  }
-  .wrapper .button:nth-child(2):hover .icon {
+}
+
+.wrapper .button:nth-child(2):hover .icon {
     background: #1DA1F2;
-  }
-  .wrapper .button:nth-child(3):hover .icon {
+}
+
+.wrapper .button:nth-child(3):hover .icon {
     background: #E1306C;
-  }
-  .wrapper .button:nth-child(4):hover .icon {
+}
+
+.wrapper .button:nth-child(4):hover .icon {
     background: #333;
-  }
-  .wrapper .button:nth-child(5):hover .icon {
+}
+
+.wrapper .button:nth-child(5):hover .icon {
     background: #ff0000;
-  }
-  .wrapper .button .icon i {
+}
+
+.wrapper .button .icon i {
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
-  }
-  .wrapper .button:hover .icon i {
+}
+
+.wrapper .button:hover .icon i {
     color: #fff;
-  }
-  .wrapper .button span {
+}
+
+.wrapper .button span {
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
     margin-left: 10px;
     transition: all 0.3s ease-out;
-  }
-  .wrapper .button:nth-child(1) span {
-    color: #4267B2;
-  }
-  .wrapper .button:nth-child(2) span {
-    color: #1DA1F2;
-  }
-  .wrapper .button:nth-child(3) span {
-    color: #E1306C;
-  }
-  .wrapper .button:nth-child(4) span {
-    color: #333;
-  }
-  .wrapper .button:nth-child(5) span {
-    color: #ff0000;
-  }
+}
 
-  
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ff0000;
+}
+
+/* Breakpoints for responsiveness */
+@media (max-width: 1200px) {
+    main .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    main .content .services .ce .ce-list h1 {
+        font-size: x-large;
+        font-weight: 600;
+    }
+
+    main .content .services .ce .ce-list .ce-element {
+        height: 100px;
+        min-width: 100%;
+    }
+
+    main .carrousel {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    main .content .services .ce .ce-list .ce-element {
+        height: 80px;
+        min-width: 100%;
+    }
+
+    main .carrousel p {
+        font-size: large;
+    }
+
+    .wrapper .button {
+        width: 50px;
+        height: 50px;
+    }
+}

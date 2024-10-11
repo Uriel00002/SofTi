@@ -65,11 +65,12 @@ main hr {
 }
 
 main .carrousel {
-    background-color: rebeccapurple;
+    background-color: transparent;
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-size: 100% 100%;
     transition: background-image 1s ease-in-out;
 }
 
@@ -165,7 +166,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: gray;
     text-decoration: none;
 }
 
